@@ -42,7 +42,9 @@ CreateThread(function ()
                     currentMarker = marker
                     AddTextEntry('utilMarkerText', '~INPUT_CONTEXT~ ' .. marker.text)
                 end
-                DisplayHelpTextThisFrame('utilMarkerText', false)
+                if marker.hasText then
+                    DisplayHelpTextThisFrame('utilMarkerText', false)
+                end
                 if IsControlJustReleased(0, 38) then
                     marker.cb()
                 end

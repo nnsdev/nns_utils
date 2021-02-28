@@ -26,7 +26,7 @@ UnregisterLabel = function (name)
 end
 
 AddEventHandler("nns_utils:client:registerLabel", RegisterLabel)
-AddEventHandler("nns_utils:client:UnregisterLabel", UnregisterLabel)
+AddEventHandler("nns_utils:client:unregisterLabel", UnregisterLabel)
 
 exports("RegisterLabel", RegisterLabel)
 exports("UnregisterLabel", UnregisterLabel)

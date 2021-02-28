@@ -24,10 +24,16 @@ RegisterMarker = function (name, text, coords, maxDist, interactDist, cb, option
         type = options.type
     end
 
+    local hasText = true
+    if options.noText == true then
+        hasText = false
+    end
+
     markers[zone][name] = {
         name = name,
         type = type,
         text = text,
+        hasText = hasText,
         coords = vector3(coords.x, coords.y, coords.z),
         maxDist = maxDist,
         interactDist = interactDist,

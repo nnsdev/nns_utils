@@ -19,7 +19,7 @@ Single resource for the creation of markers and labels, highly optimized, with c
     - `color` Default `{ r=255, g=255, b=255, a= 100 }`
     - `scale` Default `vector(1.0, 1.0, 1.0)`
     - `type` Marker type, default 27
-    - `hasText` Default true - false will disable FiveM native help text
+    - `noText` Default false - true will disable FiveM native help text
 
 **Unregister Marker ability**
 - `exports["nns_utils"]:UnregisterMarker(...)`
